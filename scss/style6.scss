@@ -1,0 +1,120 @@
+.grid-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(100px, 200px);
+    grid-template-areas: "header header message" "blog blog message" "footer footer footer";
+    .grid-elem {
+        background-color: darkblue;
+        color: #fff;
+        text-align: center;
+        line-height: 100px;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+    .orange {
+        background-color: orange;
+    }
+}
+
+#header {
+    grid-area: header;
+}
+
+#blog {
+    grid-area: blog;
+}
+
+#message {
+    grid-area: message;
+}
+
+#footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, minmax(100px, auto));
+        grid-template-areas: "header header" "blog blog" "message message" "footer footer";
+    }
+}
+
+.div-container {
+    margin-top: 55px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(100px, 200px);
+    grid-template-areas: "one one one" "second second third" "four four third" "five five six" "five five six";
+    .div-elem {
+        background-color: cadetblue;
+        text-align: center;
+        line-height: 100px;
+        // border: 1px solid black;
+        line-height: 24px;
+        padding: 15px 0 15px 0;
+        &_five {
+            background-color: transparent;
+            border: none;
+        }
+        &_six {
+            background-color: transparent;
+        }
+    }
+    .red {
+        background-color: red;
+        border-radius: 10px;
+    }
+    .gray {
+        background-color: goldenrod;
+        border: none;
+        border-radius: 10px;
+    }
+}
+
+#one {
+    grid-area: one;
+}
+
+#second {
+    grid-area: second;
+}
+
+#third {
+    grid-area: third;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#six {
+    grid-area: six;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width:768px) {
+    .div-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "one third" "second third" "four third" "five six" "five six";
+    }
+}

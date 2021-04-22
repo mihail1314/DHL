@@ -1,0 +1,174 @@
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+  -ms-grid-columns: (minmax(100px, 200px))[3];
+      grid-template-columns: repeat(3, minmax(100px, 200px));
+  -ms-grid-rows: (minmax(100px, auto))[3];
+      grid-template-rows: repeat(3, minmax(100px, auto));
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-columns: minmax(100px, 200px);
+      grid-template-areas: "header header message" "blog blog message" "footer footer footer";
+}
+
+.grid-container .grid-elem {
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.grid-container .orange {
+  background-color: orange;
+}
+
+#header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+#blog {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: blog;
+}
+
+#message {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: message;
+}
+
+#footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (minmax(100px, auto))[4];
+        grid-template-rows: repeat(4, minmax(100px, auto));
+        grid-template-areas: "header header" "blog blog" "message message" "footer footer";
+  }
+}
+
+.div-container {
+  margin-top: 55px;
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+  -ms-grid-columns: (minmax(100px, 200px))[3];
+      grid-template-columns: repeat(3, minmax(100px, 200px));
+  -ms-grid-rows: (minmax(100px, auto))[3];
+      grid-template-rows: repeat(3, minmax(100px, auto));
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-columns: minmax(100px, 200px);
+      grid-template-areas: "one one one" "second second third" "four four third" "five five six" "five five six";
+}
+
+.div-container .div-elem {
+  background-color: cadetblue;
+  text-align: center;
+  line-height: 100px;
+  line-height: 24px;
+  padding: 15px 0 15px 0;
+}
+
+.div-container .div-elem_five {
+  background-color: transparent;
+  border: none;
+}
+
+.div-container .div-elem_six {
+  background-color: transparent;
+}
+
+.div-container .red {
+  background-color: red;
+  border-radius: 10px;
+}
+
+.div-container .gray {
+  background-color: goldenrod;
+  border: none;
+  border-radius: 10px;
+}
+
+#one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: one;
+}
+
+#second {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: second;
+}
+
+#third {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: third;
+}
+
+#four {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: four;
+}
+
+#five {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: five;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+#six {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: six;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .div-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "one third" "second third" "four third" "five six" "five six";
+  }
+}
+/*# sourceMappingURL=style6.css.map */

@@ -1,0 +1,54 @@
+.inform {
+  min-height: 400px;
+  margin-top: -100px;
+}
+
+.inform__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 400px))[2];
+      grid-template-columns: repeat(2, minmax(150px, 400px));
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.inform__elem {
+  background-color: #c70101;
+  min-height: 300px;
+  padding: 0px 25px 25px 25px;
+}
+
+.inform__elem_wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+  margin-top: 0px;
+  list-style: none;
+}
+
+.inform__elem_title {
+  color: #fff;
+  width: 50%;
+  text-transform: uppercase;
+  line-height: 36px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.inform__elem_title_active {
+  background-color: gold;
+  height: 35px;
+  text-align: center;
+  color: #c70101;
+  width: 100%;
+}
+
+.inform__elem1 {
+  background-color: transparent;
+  background: url(../img/dhl2.png) center center/cover no-repeat;
+}
+/*# sourceMappingURL=nextstyle7.css.map */

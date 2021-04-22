@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 600px;
+  background: url(../img/back.png) center center/cover no-repeat;
+  padding: 25px 0 45px 0;
+}
+
+.header .grid-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .grid-header img {
+  width: 15%;
+}
+
+.header .grid-header .grid-elem {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header .grid-header .grid-elem_title {
+  color: #fff;
+}
+
+.header .grid-header .grid-elem_text {
+  color: #fff;
+}
+
+.header .grid-header .grid-phone button {
+  width: 150px;
+  height: 30px;
+  background-color: darkkhaki;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header .grid-header .grid-phone_link {
+  display: block;
+  text-decoration: none;
+  font-size: 19px;
+  text-align: center;
+  color: #fff;
+}
+
+.header .promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 55px;
+}
+
+.header .promo h1 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.header .promo_text {
+  font-size: 20px;
+  color: #fff;
+}
+
+.header .promo__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .promo__wrap__elem {
+  margin: 7px;
+}
+
+.header .promo__wrap .fas {
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.header .promo__wrap_text {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.header .promo .button_wrap {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 25px;
+}
+
+.header .promo .button_wrap button {
+  width: 300px;
+  height: 50px;
+  background-color: darkkhaki;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header .promo .button_wrap__splink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header .promo .button_wrap__splink_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .promo .button_wrap__splink_div span {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+}
+
+.header .promo .button_wrap__splink_div a {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.stage {
+  min-height: 500px;
+  padding: 75px 0 65px 0;
+}
+
+.stage__container {
+  margin-top: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 250px))[4];
+      grid-template-columns: repeat(4, minmax(150px, 250px));
+  gap: 35px;
+}
+
+.stage__elem {
+  min-height: 300px;
+}
+
+.stage__elem img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.stage__elem_title {
+  margin-bottom: 15px;
+  color: #c70101;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stage__elem_text {
+  color: #777474;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stage__elem_link {
+  color: black;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.stage__elem .fas {
+  color: #c70101;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.stage__elem1 {
+  min-height: 300px;
+  background-color: #c70101;
+  padding: 25px 0px 25px 25px;
+}
+
+.stage__elem1_text1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.stage__elem1_divider {
+  margin-top: 25px;
+  width: 35%;
+  height: 2px;
+  background-color: yellow;
+  margin-bottom: 35px;
+}
+
+.stage__elem1_descr {
+  color: #fff;
+  font-size: 18px;
+}
+
+.stage__elem1 #select {
+  margin-top: 45px;
+  background-color: #960404;
+  width: 190px;
+  padding-left: 15px;
+  color: #fff;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.stage__elem1 #select:hover {
+  background-color: gold;
+  color: #c70101;
+}
+
+.stage__elem1_btn {
+  background-color: #ffd900;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 45px;
+  border-radius: 25px;
+  color: #c70101;
+  font-size: 18px;
+}
+
+.consul {
+  padding: 75px 0 5px 0;
+  min-height: 600px;
+}
+
+.consul__video {
+  height: 100%;
+}
+
+.consul .video {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.consul__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 300px))[3];
+      grid-template-columns: repeat(3, minmax(150px, 300px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 35px;
+  z-index: 2;
+}
+
+.consul__elem {
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.consul__div {
+  padding: 20px 15px 20px 15px;
+}
+
+.consul img {
+  width: 100%;
+}
+
+.consul__text {
+  color: #c70101;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.consul__menu {
+  position: relative;
+  list-style: none;
+}
+
+.consul__menu .fas {
+  position: absolute;
+  font-size: 11px;
+  color: gold;
+  left: 18px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+/*# sourceMappingURL=style7.css.map */
