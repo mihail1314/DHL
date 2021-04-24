@@ -51,4 +51,146 @@
   background-color: transparent;
   background: url(../img/dhl2.png) center center/cover no-repeat;
 }
+
+.final {
+  min-height: 400px;
+  padding: 55px 0 60px 0;
+}
+
+.final__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 400px))[2];
+      grid-template-columns: repeat(2, minmax(150px, 400px));
+}
+
+.final__elem img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid transparent;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.final__elem1 {
+  -webkit-box-shadow: 0 0 20px 0 #caccd1;
+          box-shadow: 0 0 20px 0 #caccd1;
+  padding: 35px 15px 25px 15px;
+  margin-bottom: 25px;
+  min-width: 50px;
+  min-height: 200px;
+}
+
+.final__elem1_wrap {
+  margin-top: 25px;
+}
+
+.final__elem1_wrap .in {
+  margin-top: 25px;
+}
+
+.final__elem1_title {
+  color: darkblue;
+}
+
+.final__elem1 input {
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ada9a9;
+}
+
+.final__elem1 button {
+  border: none;
+  outline: none;
+  width: 70px;
+  height: 40px;
+  color: #fff;
+  background-color: darkblue;
+  border-radius: 15px;
+}
+
+.final__item1 .gg {
+  width: 100%;
+}
+
+#first {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+#second {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+#third {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+#four {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+#five {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+#six {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.final__div {
+  padding: 85px 0 5px 0;
+}
+
+.final__div_img {
+  margin-bottom: 5%;
+  min-height: 200px;
+  background-color: #caccd1;
+  border-radius: 10px;
+  padding: 55px;
+}
+
+.final__div_img img {
+  width: 25%;
+  float: left;
+  margin-right: 2%;
+  border-radius: 5px;
+}
+
+.kit {
+  min-height: 200px;
+  padding: 5px 0 55px 0;
+}
+
+.kit__wrap {
+  background-color: #caccd1;
+  border-radius: 10px;
+  min-height: 200px;
+  padding: 50px;
+}
+
+.kit__wrap img {
+  float: left;
+  width: 19%;
+  margin-right: 2%;
+  border-radius: 10px;
+}
 /*# sourceMappingURL=nextstyle7.css.map */
