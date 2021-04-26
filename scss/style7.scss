@@ -1,127 +1,127 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container {
     margin: 0 auto;
 }
 
-.header {
-    min-height: 600px;
-    background: url(../img/back.png) center (center/cover) no-repeat;
-    padding: 25px 0 45px 0;
-    .grid-header {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        img {
-            width: 15%;
-        }
-        .grid-elem {
-            position: absolute;
-            margin: 0 auto;
-            text-align: center;
-            &_title {
-                color: #fff;
-            }
-            &_text {
-                color: #fff;
-            }
-        }
-        .grid-phone {
-            button {
-                width: 150px;
-                height: 30px;
-                background-color: darkkhaki;
-                border: none;
-                outline: none;
-                border-radius: 5px;
-                font-size: 15px;
-                color: #fff;
-                cursor: pointer;
-            }
-            &_link {
-                display: block;
-                text-decoration: none;
-                font-size: 19px;
-                text-align: center;
-                color: #fff;
-            }
-        }
-    }
-    .promo {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: 55px;
-        h1 {
-            font-size: 35px;
-            color: #fff;
-        }
-        &_text {
-            font-size: 20px;
-            color: #fff;
-        }
-        &__wrap {
-            display: flex;
-            &__elem {
-                margin: 7px;
-            }
-            .fas {
-                color: white;
-                text-align: center;
-                display: block;
-                font-size: 65px;
-                margin-bottom: 20px;
-            }
-            &_text {
-                text-align: center;
-                font-size: 16px;
-                color: #fff;
-            }
-        }
-        .button_wrap {
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            margin-top: 25px;
-            button {
-                width: 300px;
-                height: 50px;
-                background-color: darkkhaki;
-                border: none;
-                outline: none;
-                border-radius: 5px;
-                font-size: 20px;
-                color: #fff;
-                cursor: pointer;
-            }
-            &__splink {
-                display: flex;
-                margin-top: 15px;
-                flex-direction: column;
-                align-items: flex-end;
-                &_div {
-                    display: flex;
-                    span {
-                        color: #fff;
-                        font-size: 16px;
-                        text-transform: uppercase;
-                        transform: translateX(-8px);
-                    }
-                    a {
-                        color: #fff;
-                        font-size: 16px;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-        }
-    }
-}
-
+// .header {
+//     min-height: 600px;
+//     background: url(../img/back.png) center (center/cover) no-repeat;
+//     padding: 25px 0 45px 0;
+//     .grid-header {
+//         position: relative;
+//         display: flex;
+//         justify-content: center;
+//         img {
+//             width: 15%;
+//         }
+//         .grid-elem {
+//             position: absolute;
+//             margin: 0 auto;
+//             text-align: center;
+//             &_title {
+//                 color: #fff;
+//             }
+//             &_text {
+//                 color: #fff;
+//             }
+//         }
+//         .grid-phone {
+//             button {
+//                 width: 150px;
+//                 height: 30px;
+//                 background-color: darkkhaki;
+//                 border: none;
+//                 outline: none;
+//                 border-radius: 5px;
+//                 font-size: 15px;
+//                 color: #fff;
+//                 cursor: pointer;
+//             }
+//             &_link {
+//                 display: block;
+//                 text-decoration: none;
+//                 font-size: 19px;
+//                 text-align: center;
+//                 color: #fff;
+//             }
+//         }
+//     }
+//     .promo {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-end;
+//         margin-top: 55px;
+//         h1 {
+//             font-size: 35px;
+//             color: #fff;
+//         }
+//         &_text {
+//             font-size: 20px;
+//             color: #fff;
+//         }
+//         &__wrap {
+//             display: flex;
+//             &__elem {
+//                 margin: 7px;
+//             }
+//             .fas {
+//                 color: white;
+//                 text-align: center;
+//                 display: block;
+//                 font-size: 65px;
+//                 margin-bottom: 20px;
+//             }
+//             &_text {
+//                 text-align: center;
+//                 font-size: 16px;
+//                 color: #fff;
+//             }
+//         }
+//         .button_wrap {
+//             width: 300px;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: flex-end;
+//             margin-top: 25px;
+//             button {
+//                 width: 300px;
+//                 height: 50px;
+//                 background-color: darkkhaki;
+//                 border: none;
+//                 outline: none;
+//                 border-radius: 5px;
+//                 font-size: 20px;
+//                 color: #fff;
+//                 cursor: pointer;
+//             }
+//             &__splink {
+//                 display: flex;
+//                 margin-top: 15px;
+//                 flex-direction: column;
+//                 align-items: flex-end;
+//                 &_div {
+//                     display: flex;
+//                     span {
+//                         color: #fff;
+//                         font-size: 16px;
+//                         text-transform: uppercase;
+//                         transform: translateX(-8px);
+//                     }
+//                     a {
+//                         color: #fff;
+//                         font-size: 16px;
+//                         text-transform: uppercase;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 .stage {
     min-height: 500px;
     padding: 75px 0 65px 0;

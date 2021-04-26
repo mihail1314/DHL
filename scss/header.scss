@@ -1,0 +1,126 @@
+.header {
+    min-height: 600px;
+    nav {
+        background-color: #c70101;
+        min-height: 50px;
+        line-height: 50px;
+        #lang {
+            border: none;
+            outline: none;
+            background-color: #c70101;
+            color: #fff;
+            font-size: 16px;
+        }
+        #nav2 {
+            .fas {
+                color: #fff;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+        #nav3 {
+            #country {
+                border: none;
+                outline: none;
+                background-color: #c70101;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+    &__wrap {
+        display: flex;
+        background-color: gold;
+        min-height: 100px;
+        align-items: center;
+        &_menu {
+            display: flex;
+            list-style: none;
+            li {
+                margin: 10px;
+                color: #c70101;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+        &_link {
+            position: relative;
+            height: 50px;
+            width: 50px;
+            background-color: #c70101;
+            border-radius: 100%;
+            a {
+                position: absolute;
+                color: #fff;
+                display: block;
+                text-align: center;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    &__main {
+        background: url(..//img/dhlmain.png) center center/cover no-repeat;
+        min-height: 500px;
+        padding: 65px 0 35px 0;
+        &_wrap {
+            min-width: 850px;
+            #main {
+                h1 {
+                    color: #fff;
+                    font-size: 55px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+                .divider {
+                    width: 80px;
+                    height: 3px;
+                    background-color: gold;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &_text {
+            color: gold;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        &_support {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 700;
+        }
+        &_btn {
+            border: 1px solid #fff;
+            outline: none;
+            background-color: transparent;
+            color: #fff;
+            border-radius: 20px;
+            width: 145px;
+            height: 45px;
+            text-transform: uppercase;
+            padding: 0 15px 0 15px;
+            font-weight: 600;
+            margin-right: 20px;
+            &-big {
+                width: 180px;
+                &:hover {
+                    background-color: gold;
+                    color: #c70101;
+                    border: none;
+                }
+            }
+            &:hover {
+                background-color: gold;
+                color: #c70101;
+                border: none;
+            }
+        }
+    }
+}

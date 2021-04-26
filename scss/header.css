@@ -1,0 +1,148 @@
+.header {
+  min-height: 600px;
+}
+
+.header nav {
+  background-color: #c70101;
+  min-height: 50px;
+  line-height: 50px;
+}
+
+.header nav #lang {
+  border: none;
+  outline: none;
+  background-color: #c70101;
+  color: #fff;
+  font-size: 16px;
+}
+
+.header nav #nav2 .fas {
+  color: #fff;
+}
+
+.header nav #nav2 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.header nav #nav3 #country {
+  border: none;
+  outline: none;
+  background-color: #c70101;
+  color: #fff;
+  font-size: 16px;
+}
+
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: gold;
+  min-height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__wrap_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header__wrap_menu li {
+  margin: 10px;
+  color: #c70101;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.header__wrap_link {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: #c70101;
+  border-radius: 100%;
+}
+
+.header__wrap_link a {
+  position: absolute;
+  color: #fff;
+  display: block;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header__main {
+  background: url(..//img/dhlmain.png) center center/cover no-repeat;
+  min-height: 500px;
+  padding: 65px 0 35px 0;
+}
+
+.header__main_wrap {
+  min-width: 850px;
+}
+
+.header__main_wrap #main h1 {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.header__main_wrap #main .divider {
+  width: 80px;
+  height: 3px;
+  background-color: gold;
+  margin-bottom: 30px;
+}
+
+.header__main_text {
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.header__main_support {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.header__main_btn {
+  border: 1px solid #fff;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 20px;
+  width: 145px;
+  height: 45px;
+  text-transform: uppercase;
+  padding: 0 15px 0 15px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.header__main_btn-big {
+  width: 180px;
+}
+
+.header__main_btn-big:hover {
+  background-color: gold;
+  color: #c70101;
+  border: none;
+}
+
+.header__main_btn:hover {
+  background-color: gold;
+  color: #c70101;
+  border: none;
+}
+/*# sourceMappingURL=header.css.map */
