@@ -34,17 +34,30 @@
     &__wrap {
         display: flex;
         background-color: gold;
-        min-height: 100px;
+        height: 100px;
         align-items: center;
+        &_img {
+            img {
+                margin-top: 40px;
+            }
+        }
         &_menu {
             display: flex;
             list-style: none;
-            li {
+            margin-top: 50px;
+            padding-bottom: 0;
+            .header__wrap-item {
                 margin: 10px;
                 color: #c70101;
                 text-transform: uppercase;
                 font-size: 15px;
-                font-weight: 600;
+                font-weight: 500;
+                cursor: pointer;
+                &_active {
+                    border-bottom: 4px solid #c70101;
+                    padding-bottom: 40px;
+                    font-weight: 700;
+                }
             }
         }
         &_link {
@@ -53,6 +66,7 @@
             width: 50px;
             background-color: #c70101;
             border-radius: 100%;
+            margin-top: 40px;
             a {
                 position: absolute;
                 color: #fff;
