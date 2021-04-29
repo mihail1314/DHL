@@ -1,0 +1,165 @@
+.square {
+  min-height: 200px;
+  padding: 55px 0 25px 0px;
+}
+
+.square__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.square__item {
+  position: relative;
+  margin: 0 35px;
+  border: 2px solid rgba(128, 128, 128, 0.322);
+  cursor: pointer;
+}
+
+.square__item:hover {
+  border: 2px solid #c70101;
+}
+
+.square #s1 {
+  width: 250px;
+  height: 150px;
+  background-color: rgba(128, 128, 128, 0.116);
+  background-image: url(..//img/themeforest.png);
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.square #s2 {
+  width: 250px;
+  height: 150px;
+  background-color: rgba(128, 128, 128, 0.116);
+  background-image: url(..//img/dune.png);
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.square #s3 {
+  width: 250px;
+  height: 150px;
+  background-color: rgba(128, 128, 128, 0.116);
+  background-image: url(..//img/graphicriver.png);
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.square #s4 {
+  width: 250px;
+  height: 150px;
+  background-color: rgba(128, 128, 128, 0.116);
+  background-image: url(..//img/codecanyon.png);
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.footer {
+  position: relative;
+  padding: 65px 0 0px 0;
+  min-height: 200px;
+  width: 100%;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.footer__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 600px))[2];
+      grid-template-columns: repeat(2, minmax(150px, 600px));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__img1 {
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+  position: relative;
+  left: -75px;
+  top: 31px;
+}
+
+.footer__img2 {
+  position: relative;
+  top: 31px;
+}
+
+.footer__grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 250px))[3];
+      grid-template-columns: repeat(3, minmax(150px, 250px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  gap: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 115px;
+}
+
+.footer__grid_item {
+  list-style: none;
+  position: relative;
+}
+
+.footer__grid_item_one {
+  margin-bottom: 1px;
+  font-size: 18px;
+}
+
+.footer__grid_item_one:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+.footer__grid_item-two li {
+  font-size: 18px;
+}
+
+.footer__grid_item-two li:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.footer__grid_item .text {
+  position: absolute;
+  top: -40px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #c70101;
+}
+
+.footer__grid_item .fas {
+  color: #c70101;
+  position: absolute;
+  left: 17px;
+  top: 7px;
+}
+
+.footer__grid_item #one-grid:hover {
+  color: yellow;
+}
+/*# sourceMappingURL=last.css.map */

@@ -1,0 +1,149 @@
+.square {
+    min-height: 200px;
+    padding: 55px 0 25px 0px;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+        margin: 0 35px;
+        border: 2px solid rgba(128, 128, 128, 0.322);
+        cursor: pointer;
+        &:hover {
+            border: 2px solid #c70101;
+        }
+    }
+    #s1 {
+        width: 250px;
+        height: 150px;
+        background-color: rgba(128, 128, 128, 0.116);
+        background-image: url(..//img/themeforest.png);
+        background-repeat: no-repeat;
+        background-size: 85%;
+        background-position: center;
+        background-blend-mode: multiply;
+    }
+    #s2 {
+        width: 250px;
+        height: 150px;
+        background-color: rgba(128, 128, 128, 0.116);
+        background-image: url(..//img/dune.png);
+        background-repeat: no-repeat;
+        background-size: 85%;
+        background-position: center;
+        background-blend-mode: multiply;
+    }
+    #s3 {
+        width: 250px;
+        height: 150px;
+        background-color: rgba(128, 128, 128, 0.116);
+        background-image: url(..//img/graphicriver.png);
+        background-repeat: no-repeat;
+        background-size: 85%;
+        background-position: center;
+        background-blend-mode: multiply;
+    }
+    #s4 {
+        width: 250px;
+        height: 150px;
+        background-color: rgba(128, 128, 128, 0.116);
+        background-image: url(..//img/codecanyon.png);
+        background-repeat: no-repeat;
+        background-size: 85%;
+        background-position: center;
+        background-blend-mode: multiply;
+    }
+}
+
+.footer {
+    position: relative;
+    padding: 65px 0 0px 0;
+    min-height: 200px;
+    width: 100%;
+    margin-bottom: 0;
+    position: relative;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 600px));
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img1 {
+        transform: skewX(20deg);
+        position: relative;
+        left: -75px;
+        top: 31px;
+    }
+    &__img2 {
+        position: relative;
+        top: 31px;
+    }
+    &__grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(150px, 250px));
+        justify-content: center;
+        position: absolute;
+        gap: 60px;
+        left: 50%;
+        transform: translate(-50%);
+        top: 115px;
+        &_item {
+            list-style: none;
+            position: relative;
+            &_one {
+                margin-bottom: 1px;
+                font-size: 18px;
+                &:hover {
+                    color: gold;
+                    cursor: pointer;
+                }
+                // &::before {
+                //     content: '';
+                //     display: block;
+                //     width: 10px;
+                //     height: 2px;
+                //     transform: skewY(20deg);
+                //     background-color: #c70101;
+                // }
+                // &::after {
+                //     content: '';
+                //     display: block;
+                //     width: 10px;
+                //     height: 2px;
+                //     transform: skewY(-20deg);
+                //     background-color: #c70101;
+                // }
+            }
+            &-two {
+                li {
+                    font-size: 18px;
+                    &:hover {
+                        color: aqua;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .text {
+                position: absolute;
+                top: -40px;
+                font-size: 20px;
+                font-weight: 600;
+                text-align: center;
+                color: #c70101;
+            }
+            .fas {
+                color: #c70101;
+                position: absolute;
+                left: 17px;
+                top: 7px;
+            }
+            #one-grid {
+                &:hover {
+                    color: yellow;
+                }
+            }
+        }
+    }
+}
